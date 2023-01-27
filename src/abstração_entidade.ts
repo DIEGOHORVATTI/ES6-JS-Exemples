@@ -1,4 +1,4 @@
-import './function_global';
+import './function_global'
 
 //um osftwere de marcenaria
 //cadeira e sofá
@@ -48,33 +48,33 @@ import './function_global';
 //paradgma de oo
 
 class Cadeira {
-  qtdade_pernas: number;
-  giratoria: boolean;
-  cor: 'vermelho' | 'preto' | 'azul';
+  qtdade_pernas: number
+  giratoria: boolean
+  cor: 'vermelho' | 'preto' | 'azul'
 
   constructor(
     qtdade_pernas: number,
     giratoria: boolean,
     cor: 'vermelho' | 'preto' | 'azul'
   ) {
-    this.qtdade_pernas = qtdade_pernas;
-    this.giratoria = giratoria;
-    this.cor = cor;
+    this.qtdade_pernas = qtdade_pernas
+    this.giratoria = giratoria
+    this.cor = cor
   }
 
   girarCadeira() {
     if (this.giratoria === true) {
-      console.log('cadeira é giratoria');
+      console.log('cadeira é giratoria')
     } else {
-      console.log('cadeira não giratoria');
+      console.log('cadeira não giratoria')
     }
   }
 }
 
-let cadeiras = Array();
+let cadeiras = Array()
 
-cadeiras.push(new Cadeira(4, false, 'preto'));
-cadeiras.push(new Cadeira(1, true, 'vermelho'));
+cadeiras.push(new Cadeira(4, false, 'preto'))
+cadeiras.push(new Cadeira(1, true, 'vermelho'))
 
-console.log(cadeiras);
+console.log(cadeiras)
 //cadeira2.girarCadeira()

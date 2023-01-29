@@ -1,4 +1,4 @@
-import './function_global';
+import './function_global'
 
 //array
 
@@ -15,11 +15,11 @@ let obj = {
   a: 10,
   b: 20,
   c: 30,
-  d: 40
-};
-
-function test({ a: x, b, e = 50 }) {
-  console.log(x, b, e);
+  x: 40
 }
 
-test(obj);
+function test(parms: object) {
+  console.log(parms)
+}
+
+test(obj)

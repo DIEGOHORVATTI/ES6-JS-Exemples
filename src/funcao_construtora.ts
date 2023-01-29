@@ -1,32 +1,32 @@
-import './function_global';
+import './function_global'
 
 let Carro = function () {
-  this.cor = 'Amarelo';
-  this.modelo = 'Gol';
-  this.velocidadeAtual = 0;
-  this.velocidadeMaxima = 180;
+  this.cor = 'Amarelo'
+  this.modelo = 'Gol'
+  this.velocidadeAtual = 0
+  this.velocidadeMaxima = 180
 
   this.acelerar = function () {
     //this.velocidadeAtual += 10
 
-    let velocidade = this.getVelocidadeAtual() + 10;
-    this.setVelocidadeAtual(velocidade);
-  };
+    let velocidade = this.getVelocidadeAtual() + 10
+    this.setVelocidadeAtual(velocidade)
+  }
 
   this.getVelocidadeAtual = function () {
-    return this.velocidadeAtual;
-  };
+    return this.velocidadeAtual
+  }
 
   this.setVelocidadeAtual = function (velocidadeAtual) {
-    this.velocidadeAtual = velocidadeAtual;
-  };
-};
+    this.velocidadeAtual = velocidadeAtual
+  }
+}
 
-let carro = new Carro();
+let carro = new Carro()
 
-console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`);
-carro.acelerar();
-carro.acelerar();
-carro.acelerar();
-carro.acelerar();
-console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`);
+console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`)
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+carro.acelerar()
+console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`)

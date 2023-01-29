@@ -1,11 +1,11 @@
 import './function_global'
 
 class Animal {
-  cor: string
+  cor: 'preto' | 'branco'
   tamanho: number
   peso: number
 
-  constructor(cor: string, tamanho: number, peso: number) {
+  constructor(cor: 'preto' | 'branco', tamanho: number, peso: number) {
     this.cor = cor
     this.tamanho = tamanho
     this.peso = peso
@@ -18,7 +18,12 @@ class Animal {
 
 class Passaro extends Animal {
   bico: string
-  constructor(cor: string, tamanho: number, peso: number, bico: string) {
+  constructor(
+    cor: 'preto' | 'branco',
+    tamanho: number,
+    peso: number,
+    bico: string
+  ) {
     super(cor, tamanho, peso)
     this.bico = bico
   }
@@ -31,13 +36,13 @@ class Passaro extends Animal {
 class Papagaio extends Passaro {
   saberFalar: string
   constructor(
-    cor: number,
+    cor: 'preto' | 'branco',
     tamanho: number,
     peso: number,
     bico: string,
     saberFalar: string
   ) {
-    super('Médio', cor, tamanho, peso)
+    super(cor, tamanho, peso, bico)
     this.saberFalar = saberFalar
   }
 
@@ -48,7 +53,7 @@ class Papagaio extends Passaro {
 
 class Avestruz extends Passaro {
   constructor() {
-    super('Pequeno', 20, 30, 'Grande')
+    super('branco', 20, 30, 'Grande')
   }
 
   enterarCabeça() {
@@ -66,7 +71,7 @@ class Avestruz extends Passaro {
 //let passaro = new Passaro('Médio', 'vermelho', 10, 150)
 //Console.log(passaro)
 
-let papagaio = new Papagaio(10, 20, 10, 'ola', 'Brasileir')
+let papagaio = new Papagaio('preto', 21, 10, '150', 'Boa')
 console.log(papagaio)
 
 papagaio.voar()

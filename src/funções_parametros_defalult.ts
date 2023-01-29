@@ -1,4 +1,4 @@
-import './function_global';
+import './function_global'
 
 function boasVindas(
   nome_usuario = 'Diego',
@@ -7,8 +7,8 @@ function boasVindas(
 ) {
   document.write(
     `Bem vindo ${nome_usuario}, atualização disponivel ${atualizacao} novas funções com recursos incriveis ${data}`
-  );
+  )
 }
 
 //boasVindas(undefined, 'V4.5.8.7.5' , '08/11/2020')
-boasVindas('macarrão', 'V4.5.8.7.5', '08/11/2020');
+boasVindas('macarrão', 'V4.5.8.7.5', '08/11/2020')

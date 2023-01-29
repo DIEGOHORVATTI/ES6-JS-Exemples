@@ -1,4 +1,4 @@
-import './function_global';
+import './function_global'
 
 //3 escopos: (  global, fução, broco  )
 
@@ -9,72 +9,72 @@ import './function_global';
 //broco recebe escopos globais e retorna a funções e outros blocos também retorna variaveis de bloco nara o global epara funções
 
 //--variavel global--//
-var anime = 'sword art online';
+var anime = 'sword art online'
 
 //global
-console.log('global ' + anime);
+console.log('global ' + anime)
 
 //função
 function x() {
-  console.log('função ' + anime);
+  console.log('função ' + anime)
 }
 
 //bloco
 if (true) {
-  console.log('bloco ' + anime);
-  var Anime = 'Avatar';
-  console.log('var de bloco ' + Anime);
+  console.log('bloco ' + anime)
+  var Anime = 'Avatar'
+  console.log('var de bloco ' + Anime)
 }
 
 //var de boloco no global
-console.log('var de bloco no global ' + Anime);
+console.log('var de bloco no global ' + Anime)
 
 //var de bloco na função
 function T() {
-  console.log('var de bloco na função ' + Anime);
+  console.log('var de bloco na função ' + Anime)
 }
 
-T();
+T()
 
 //bloco na função
 function Y() {
   if (true) {
-    console.log('bloco na função ' + anime);
+    console.log('bloco na função ' + anime)
   }
 }
 
-x();
-Y();
+x()
+Y()
 
-console.log('________________________________');
+console.log('________________________________')
 
 function varE() {
-  var animes = 'Hunter x Hunter';
-  console.log('global ' + animes);
+  var animes = 'Hunter x Hunter'
+  console.log('global ' + animes)
 
   function varL() {
     //undefined
-    console.log('função da função ' + Anime);
+    console.log('função da função ' + Anime)
 
     //variavel da função sem elevação
-    var animes = 'Naruto';
-    console.log('bloco da função ' + animes);
+    var animes = 'Naruto'
+    console.log('bloco da função ' + animes)
   }
 
-  console.log('global ' + animes);
-  varL();
+  console.log('global ' + animes)
+  varL()
 }
 
-varE();
+varE()
 
-console.log('________________________________');
+console.log('________________________________')
 
 function varD() {
-  var anime = 'One piece';
-  console.log(anime);
+  var anime = 'One piece'
+  console.log(anime)
 }
 
-varD();
+varD()
 
 //variavel que não subio de nivel
-console.log(anime);
+console.log(anime)

@@ -1,4 +1,4 @@
-import './function_global';
+import './function_global'
 
 //3 escopos: (  global, fução, broco  )
 
@@ -9,16 +9,16 @@ import './function_global';
 //broco recebe escopos globais e retorna a funções e outros blocos
 
 //bloco
-var anime = 'sword art online';
+var anime = 'sword art online'
 
-console.log('global ' + anime);
+console.log('global ' + anime)
 
 function x() {
-  console.log('função ' + anime);
+  console.log('função ' + anime)
 }
 
-x();
+x()
 
 if (true) {
-  console.log('bloco ' + anime);
+  console.log('bloco ' + anime)
 }

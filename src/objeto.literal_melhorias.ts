@@ -1,9 +1,9 @@
-import './function_global';
+import './function_global'
 
-let nome = 'Jorge';
-let idade = 29;
-let sexo = 'Masculino';
-let profissao = 'Programador';
+let nome = 'Jorge'
+let idade = 29
+let sexo = 'Masculino'
+let profissao = 'Programador'
 
 let objeto = {
   nome: nome,
@@ -15,12 +15,12 @@ let objeto = {
       `${(this, nome)}, tem ${this.idade} anos, é do sexo ${this.sexo} e é ${
         this.profissao
       }`
-    );
+    )
   }
-};
+}
 
-console.log(objeto);
-objeto.exibirResumo();
+console.log(objeto)
+objeto.exibirResumo()
 
 let objeto2 = {
   nome,
@@ -32,9 +32,9 @@ let objeto2 = {
       `${(this, nome)}, tem ${this.idade} anos, é do sexo ${this.sexo} e é ${
         this.profissao
       }`
-    );
+    )
   }
-};
+}
 
-console.log(objeto2);
-objeto.exibirResumo();
+console.log(objeto2)
+objeto.exibirResumo()

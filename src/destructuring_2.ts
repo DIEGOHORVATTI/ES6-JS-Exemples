@@ -1,13 +1,13 @@
-import './function_global';
+import './function_global'
 
 let produto = {
   descricao: 'notbook',
   preco: 1800,
   detalhes: {
     fabricante: 'abc',
-    modelo: undefined
+    modelo: ''
   }
-};
+}
 
 //composição
 // é um
@@ -26,6 +26,6 @@ let produto = {
 
 let {
   detalhes: { fabricante: x, modelo: y = 'não informado' }
-} = produto;
+} = produto
 
-console.log(x, y);
+console.log(x, y)

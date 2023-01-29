@@ -1,25 +1,25 @@
-import './function_global';
+import './function_global'
 
 // contexto rest - juntamos dados
 
-function soma(...junt) {
-  let resultado = 0;
-  junt.forEach((v) => (resultado += v));
+function soma(...junt: Array<number>) {
+  let resultado = 0
+  junt.forEach((v) => (resultado += v))
 
   //console.log(junt)
-  return resultado;
+  return resultado
 }
 
-console.log(soma(3, 8, 5, 7, -8, 10, 115));
+console.log(soma(3, 8, 5, 7, -8, 10, 115))
 
-function multiplicacao(m, ...p) {
+function multiplicacao(m: number, ...p: Array<number>) {
   //console.log(m)
-  let resultado = 0;
+  let resultado = 0
   //console.log(p)
 
-  p.forEach((v) => (resultado += m * v));
+  p.forEach((v) => (resultado += m * v))
 
-  return resultado;
+  return resultado
 }
 
-console.log(multiplicacao(2, 5, 8, 9, 6, 3, 1));
+console.log(multiplicacao(2, 5, 8, 9, 6, 3, 1))

@@ -1,4 +1,4 @@
-import './function_global';
+import './function_global'
 
 /*
 	let quadrado = function(x = 5) {
@@ -36,6 +36,6 @@ import './function_global';
 		}
 	}*/
 
-let parImpar = (numero) => (numero % 2 === 0 ? 'par' : 'Ímpar'); //return implícito
+let parImpar = (numero: number) => (numero % 2 === 0 ? 'par' : 'Ímpar') //return implícito
 
-document.write(parImpar(4));
+document.write(parImpar(4))

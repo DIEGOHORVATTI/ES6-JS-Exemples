@@ -1,70 +1,70 @@
-import './function_global';
+import './function_global'
 
 class Animal {
-  cor: string;
-  tamanho: null;
-  peso: null;
+  cor: string
+  tamanho: null
+  peso: null
   constructor() {
-    this.cor = '';
-    this.tamanho = null;
-    this.peso = null;
+    this.cor = ''
+    this.tamanho = null
+    this.peso = null
   }
 
   dormir() {
-    console.log('Dormir');
+    console.log('Dormir')
   }
 }
 
 class Cachorro extends Animal {
-  orelhas: string;
+  orelhas: string
   constructor() {
-    super();
-    this.orelhas = 'Grandes e caídas';
+    super()
+    this.orelhas = 'Grandes e caídas'
   }
 
   correr() {
-    console.log('Correr');
+    console.log('Correr')
   }
 
   rosnar() {
-    console.log('Rosnar');
+    console.log('Rosnar')
   }
 }
 
 class Passaro extends Animal {
-  bico: string;
+  bico: string
   constructor() {
-    super();
-    this.bico = 'Curto';
+    super()
+    this.bico = 'Curto'
   }
 
   voar() {
-    console.log('Voar');
+    console.log('Voar')
   }
 }
 
 class Papagaio extends Passaro {
-  saberFalar: boolean;
+  saberFalar: boolean
   constructor() {
-    super();
-    this.saberFalar = true;
+    super()
+    this.saberFalar = true
   }
 
   falar() {
-    console.log('Falar');
+    console.log('Falar')
   }
 }
 
-let cachorro = new Cachorro();
-let passaro = new Passaro();
-let papagaio = new Papagaio();
+let cachorro = new Cachorro()
+let passaro = new Passaro()
+let papagaio = new Papagaio()
 
-cachorro.dormir();
-passaro.dormir();
-papagaio.falar();
-papagaio.dormir();
-papagaio.voar();
+cachorro.dormir()
+passaro.dormir()
+papagaio.falar()
+papagaio.dormir()
+papagaio.voar()
 
-console.log(cachorro);
-console.log(passaro);
-console.log(papagaio);
+console.log(cachorro)
+console.log(passaro)
+console.log(papagaio)

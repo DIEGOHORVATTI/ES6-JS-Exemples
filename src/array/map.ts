@@ -1,4 +1,5 @@
-import './function_global'
+import '../OO/function_global'
+import { Title, Body } from '../OO/function'
 
 const produtos = [
   { nome: 'Notebook', preco: 2499, fragil: true },
@@ -6,5 +7,4 @@ const produtos = [
   { nome: 'Copo de Vidro', preco: 12.49, fragil: true }
 ]
 
-const precosReal = produtos.map((p) => p.preco * 4)
-console.log(precosReal)
+console.log(produtos.map((p) => p.preco * 4))

@@ -1,4 +1,4 @@
-import './function_global'
+import '../OO/function_global'
 
 const produtos = [
   { nome: 'Notebook', preco: 10, fragil: true },

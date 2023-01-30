@@ -1,6 +1,13 @@
 import '../OO/function_global'
 import { Title, Body } from '../OO/function'
 
+/*
+  O método splice () altera o conteúdo de uma matriz removendo 
+  ou substituindo os elementos existentes e / ou adicionando 
+  novos elementos no lugar. Para acessar parte de uma matriz 
+  sem modificá-la, consulte slice ().
+*/
+
 Title('array normal')
 const months = ['Jan', 'March', 'April', 'June']
 Body(months)

@@ -9,10 +9,29 @@ import { Title, Body } from '../OO/function'
   retornará false. Não modifica a matriz.
 */
 
-const array = [1, 2, 3, 4, 5]
-
-// Checks whether an element is even
+Title('Retorna true se tiver algum item par no array')
+const array = [3, 6, 9, 3, 2]
 const even = (element: number) => element % 2 === 0
+console.log(array, '\n', array.some(even))
+Body()
 
-console.log(array.some(even))
-// Expected output: true
+Title('retorna cada elemento do array')
+array.some((element) => {
+  Body(element)
+})
+Body()
+
+Title('retorna cada elemento e indice do array')
+array.some((element, index) => {
+  Body(element, index)
+})
+Body()
+
+Title('retorna cada elemento e indice do array e o respectivo array')
+array.some((element, index, array) => {
+  Body(element, index, array)
+})
+
+Title('funcao como parametro do some')
+const data = (parms: number) => parms === 3
+Body(array.some(data))
